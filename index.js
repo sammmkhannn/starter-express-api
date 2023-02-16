@@ -6,7 +6,7 @@ import cors from "cors";
 import userRoutes from "./routes/userRoutes/user.routes.js";
 import postRoutes from "./routes/UserPostRoutes/post.routes.js";
 import adminRoutes from "./routes/AdminRoutes/admin.routes.js";
-import notificationRoutes from "./routes/NotificationRoutes/notification.routes.js";
+// import notificationRoutes from "./routes/NotificationRoutes/notification.routes.js";
 import customerHelpRoutes from "./routes/CustomerHelpRoutes/customerHelp.routes.js";
 import publicGroupRoutes from "./routes/GroupRoutes/publicGroup.routes.js";
 import privateGroupRoutes from "./routes/GroupRoutes/privateGroup.routes.js";
@@ -61,7 +61,7 @@ app.use("/posts", postRoutes);
 app.use("/admin", adminRoutes);
 app.use("/private-group", privateGroupRoutes);
 app.use("/public-group", publicGroupRoutes);
-app.use('/notifications', notificationRoutes);
+// app.use('/notifications', notificationRoutes);
 app.use('/cutomer-help', customerHelpRoutes);
 
 app.listen(port, () => {
